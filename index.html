@@ -156,9 +156,11 @@
                                 </a>
                             </th>
                             <td class="mdc-data-table__cell">
-                                <span class="material-icons red">
-                                    clear
-                                </span>
+                                <a href="https://www.nytimes.com/2020/12/29/us/louisville-officer-fired-jaynes-breonna-taylor.html" target="_blank">
+                                    <span class="material-icons green">
+                                        check_circle_outline
+                                    </span>
+                                </a>
                             </td>
                             <td class="mdc-data-table__cell">
                                 <span class="material-icons red">
@@ -224,7 +226,7 @@
             today = new Date(today.getFullYear(), today.getMonth(), today.getDate())
             var murder = new Date(2020, 02, 13);
             var oneDay = 24 * 60 * 60 * 1000;
-            var diffDays = (today - murder) / oneDay;
+            var diffDays = Math.floor((today - murder) / oneDay);
 
             document.getElementById("timeSince").innerHTML = "It has been <strong>" + diffDays + "</strong> days since she has been murdered.";
         </script>
